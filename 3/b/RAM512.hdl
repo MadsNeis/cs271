@@ -13,5 +13,13 @@ CHIP RAM512 {
     OUT out[16];
 
     PARTS:
-    //// Replace this comment with your code.
+    RAM64(in=in , load=load , address=address[3..8] , out=out1 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out2 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out3 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out4 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out5 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out6 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out7 );
+    RAM64(in=in , load=load , address=address[3..8] , out=out8 );
+
 }
